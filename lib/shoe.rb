@@ -9,6 +9,8 @@ def brand=(brand)
     return
   else
     BRANDS << brand
+  end
+end
 
   def initialize(brand)
     @brand = brand

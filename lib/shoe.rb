@@ -8,18 +8,13 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    if BRANDS.include?(brand) == false
+      BRANDS << brand
   end
 
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
-  end
-
-  def brand=(brand)
-    binding.pry
-    if BRANDS.include?(brand) == false
-      BRANDS << brand
-    end
   end
 
 end

@@ -5,9 +5,7 @@ class Shoe
 BRANDS = []
 
 def brand=(brand)
-  if BRANDS.include?(brand)
-    return
-  else
+  if BRANDS.include?(brand) == false
     BRANDS << brand
   end
 end
